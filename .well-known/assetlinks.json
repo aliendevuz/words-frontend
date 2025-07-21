@@ -1,0 +1,19 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "uz.alien.dictup",
+      "sha256_cert_fingerprints": [
+        "F5:70:5F:81:27:1D:FE:DD:D7:6C:6D:61:04:12:4F:9D:7B:C6:20:75:D5:21:14:42:7D:8B:47:C4:10:84:A8:D9",
+        "C5:8F:D6:FA:5B:7A:F5:6A:83:58:B0:80:91:78:A0:B6:C2:38:35:B6:B4:A9:5C:C5:7B:6E:00:AE:31:74:55:60",
+        "6A:0D:7C:EB:3F:47:97:F8:D7:49:2D:DC:DE:FE:F5:11:48:E5:7F:EC:79:C4:C0:75:D3:1E:BB:B6:6F:37:B7:27",
+        "7D:21:04:A9:63:FC:12:0B:71:B2:A4:B4:17:E9:E4:E1:36:B5:8D:25:C3:9C:BD:34:8C:15:90:D6:FC:17:86:69",
+        "B5:9D:EC:BE:1B:0A:E3:39:72:7F:F6:E1:A2:92:BE:1B:68:47:C3:69:30:06:A4:8B:50:08:2C:3B:8F:84:76:67"
+      ]
+    }
+  }
+]

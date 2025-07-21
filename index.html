@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4000 Words 📊 — Android ilovasi</title>
+
+  <!-- ====== Inline CSS ====== -->
+  <style>
+    :root {
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --primary: #3b82f6;
+      --secondary: #64748b;
+      --radius: 1.25rem;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+      font-family: "Inter", system-ui, sans-serif;
+      color: var(--light);
+      background: var(--dark);
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ---- Layout ---- */
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    header,
+    footer {
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    main {
+      flex: 1 0 auto;
+      display: grid;
+      place-items: center;
+      padding: 2rem 1rem;
+    }
+
+    /* ---- Hero card ---- */
+    .card {
+      width: 100%;
+      max-width: 28rem;
+      background: #1e293b;
+      border-radius: var(--radius);
+      padding: 2.5rem 2rem;
+      box-shadow: 0 20px 45px -15px rgba(0, 0, 0, .4);
+      text-align: center;
+      animation: fadeIn .8s ease forwards;
+    }
+
+    .card h1 {
+      font-size: 2.125rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .card p {
+      margin: 1rem 0 1.75rem;
+      color: var(--secondary);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .9rem 1.6rem;
+      border-radius: 9999px;
+      background: var(--primary);
+      color: var(--light);
+      font-weight: 600;
+      box-shadow: 0 6px 20px -4px rgba(59, 130, 246, .45);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px -6px rgba(59, 130, 246, .55);
+    }
+
+    /* ---- Footer ---- */
+    footer small {
+      font-size: .8rem;
+      color: var(--secondary);
+    }
+
+    /* ---- Animation ---- */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ---- Responsive tweaks ---- */
+    @media (min-width: 480px) {
+      .card h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- ====== Header ====== -->
+    <header>
+      <h2>4000 Words 📊</h2>
+    </header>
+
+    <!-- ====== Main / Hero ====== -->
+    <main>
+      <section class="card">
+        <h1>4000 Words</h1>
+        <p>Inglizcha–oʻzbekcha soʻz boyligini&nbsp;tez&nbsp;va&nbsp;interaktiv&nbsp;usulda&nbsp;oʻrganing.</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=uz.alien.dictup" target="_blank"
+          rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 512 512">
+            <path
+              d="M325.3 234.3 104.6 13.7c-8.8-8.8-22.6-8.8-31.4 0C67.5 19.4 64 27.4 64 36v440c0 8.6 3.5 16.6 9.2 22.3 8.8 8.8 22.6 8.8 31.4 0l220.7-220.7c12.5-12.5 12.5-32.8 0-45.3zM384 160l-64 64 64 64 96-96-96-96-64 64 64 64z" />
+          </svg>
+          Google Play’dan yuklab olish
+        </a>
+      </section>
+    </main>
+
+    <!-- ====== Footer ====== -->
+    <footer>
+      <small>&copy; 2025 Lova.uz Barcha huquqlar himoyalangan.</small>
+    </footer>
+
+  </div>
+
+  <!-- ====== Tiny JS (optional scroll-to-top fade later) ====== -->
+  <script>
+    // Agar keyinroq qo'shimcha interaktivlik kerak bo'lsa shu yerga yozishingiz mumkin
+  </script>
+</body>
+
+</html>
