@@ -1,169 +1,450 @@
 <!DOCTYPE html>
 <html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4000 Words 📚 — Ingliz tilini o'rganing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1a73e8",
+              "primary-dark": "#1557b0",
+              secondary: "#34a853",
+              accent: "#ea4335",
+              "accent-light": "#fbbc04",
+            },
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-inter bg-gray-50">
+    <!-- Landing Page -->
+    <div id="landing-page" class="min-h-screen">
+      <!-- Header -->
+      <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center py-4">
+            <div class="flex items-center">
+              <h1 class="text-2xl font-bold text-primary">4000 Words 📚</h1>
+            </div>
+            <nav class="flex items-center space-x-4">
+              <button
+                id="start-btn"
+                class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg font-medium transition-all duration-200 transform hover:scale-105"
+              >
+                Boshlash
+              </button>
+            </nav>
+          </div>
+        </div>
+      </header>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>4000 Words 📊 — Android ilovasi</title>
-
-  <!-- ====== Inline CSS ====== -->
-  <style>
-    :root {
-      --dark: #0f172a;
-      --light: #f8fafc;
-      --primary: #3b82f6;
-      --secondary: #64748b;
-      --radius: 1.25rem;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html,
-    body {
-      height: 100%;
-      font-family: "Inter", system-ui, sans-serif;
-      color: var(--light);
-      background: var(--dark);
-    }
-
-    h2 {
-      font-size: 1.25rem;
-      font-weight: 600
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    /* ---- Layout ---- */
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: 100%;
-    }
-
-    header,
-    footer {
-      padding: 1.5rem 1rem;
-      text-align: center;
-    }
-
-    main {
-      flex: 1 0 auto;
-      display: grid;
-      place-items: center;
-      padding: 2rem 1rem;
-    }
-
-    /* ---- Hero card ---- */
-    .card {
-      width: 100%;
-      max-width: 28rem;
-      background: #1e293b;
-      border-radius: var(--radius);
-      padding: 2.5rem 2rem;
-      box-shadow: 0 20px 45px -15px rgba(0, 0, 0, .4);
-      text-align: center;
-      animation: fadeIn .8s ease forwards;
-    }
-
-    .card h1 {
-      font-size: 2.125rem;
-      font-weight: 700;
-      line-height: 1.2;
-    }
-
-    .card p {
-      margin: 1rem 0 1.75rem;
-      color: var(--secondary);
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      padding: .9rem 1.6rem;
-      border-radius: 9999px;
-      background: var(--primary);
-      color: var(--light);
-      font-weight: 600;
-      box-shadow: 0 6px 20px -4px rgba(59, 130, 246, .45);
-      transition: transform .15s ease, box-shadow .15s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 28px -6px rgba(59, 130, 246, .55);
-    }
-
-    /* ---- Footer ---- */
-    footer small {
-      font-size: .8rem;
-      color: var(--secondary);
-    }
-
-    /* ---- Animation ---- */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(25px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* ---- Responsive tweaks ---- */
-    @media (min-width: 480px) {
-      .card h1 {
-        font-size: 2.5rem;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="wrapper">
-
-    <!-- ====== Header ====== -->
-    <header>
-      <h2>4000 Words 📊</h2>
-    </header>
-
-    <!-- ====== Main / Hero ====== -->
-    <main>
-      <section class="card">
-        <h1>4000 Words</h1>
-        <p>Inglizcha–oʻzbekcha soʻz boyligini&nbsp;tez&nbsp;va&nbsp;interaktiv&nbsp;usulda&nbsp;oʻrganing.</p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=uz.alien.dictup" target="_blank"
-          rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 512 512">
-            <path
-              d="M325.3 234.3 104.6 13.7c-8.8-8.8-22.6-8.8-31.4 0C67.5 19.4 64 27.4 64 36v440c0 8.6 3.5 16.6 9.2 22.3 8.8 8.8 22.6 8.8 31.4 0l220.7-220.7c12.5-12.5 12.5-32.8 0-45.3zM384 160l-64 64 64 64 96-96-96-96-64 64 64 64z" />
-          </svg>
-          Google Play’dan yuklab olish
-        </a>
+      <!-- Hero Section -->
+      <section
+        class="bg-gradient-to-br from-blue-600 via-purple-600 to-purple-800 text-white py-20"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="text-center lg:text-left">
+              <div
+                class="inline-flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/30"
+              >
+                <span class="mr-2">🎯</span>
+                Eng samarali o'rganish usuli
+              </div>
+              <h2
+                class="text-4xl lg:text-6xl font-extrabold leading-tight mb-6"
+              >
+                Ingliz tilini
+                <span
+                  class="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent"
+                  >4000 so'z</span
+                >
+                bilan o'rganing
+              </h2>
+              <p class="text-xl text-white/90 mb-8 leading-relaxed">
+                Rasmlar, audio va interaktiv mashqlar yordamida ingliz tilining
+                eng muhim so'zlarini o'rganing. Har bir so'z uchun to'liq
+                ma'lumot va amaliy misollar.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              >
+                <a
+                  href="https://play.google.com/store/apps/details?id=uz.alien.dictup"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="inline-flex items-center justify-center bg-secondary hover:bg-green-600 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg"
+                >
+                  <svg
+                    class="w-5 h-5 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"
+                    />
+                  </svg>
+                  Google Play'dan yuklab olish
+                </a>
+                <button
+                  id="try-web-btn"
+                  class="inline-flex items-center justify-center bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 border border-white/30"
+                >
+                  <svg
+                    class="w-5 h-5 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,16.5L18,9.5L16.59,8.09L11,13.67L7.91,10.59L6.5,12L11,16.5Z"
+                    />
+                  </svg>
+                  Veb versiyasini sinab ko'ring
+                </button>
+              </div>
+            </div>
+            <div class="flex justify-center">
+              <div
+                class="relative transform -rotate-6 hover:rotate-0 transition-transform duration-500"
+              >
+                <div
+                  class="w-72 h-[580px] bg-gradient-to-b from-gray-800 to-gray-900 rounded-[3rem] p-4 shadow-2xl"
+                >
+                  <div
+                    class="w-full h-full bg-white rounded-[2.5rem] overflow-hidden relative"
+                  >
+                    <div
+                      class="absolute top-4 left-1/2 transform -translate-x-1/2 w-16 h-1.5 bg-gray-300 rounded-full"
+                    ></div>
+                    <div
+                      class="p-8 pt-12 h-full bg-gradient-to-br from-blue-50 to-purple-50 flex flex-col items-center justify-center"
+                    >
+                      <div class="text-center mb-8">
+                        <div class="text-lg font-semibold text-gray-800 mb-2">
+                          Essential Words
+                        </div>
+                        <div class="text-sm text-primary font-medium">
+                          Level 1 • Unit 5
+                        </div>
+                      </div>
+                      <div
+                        class="bg-white p-6 rounded-2xl shadow-lg text-center w-full max-w-48"
+                      >
+                        <div
+                          class="w-20 h-20 bg-gradient-to-br from-red-400 to-orange-500 rounded-xl mx-auto mb-4 flex items-center justify-center text-3xl"
+                        >
+                          🍎
+                        </div>
+                        <div class="text-2xl font-bold text-gray-800 mb-2">
+                          Apple
+                        </div>
+                        <div class="text-lg text-primary font-medium mb-2">
+                          Olma
+                        </div>
+                        <div class="text-sm text-gray-500 italic">[ˈæpəl]</div>
+                      </div>
+                      <div class="flex gap-3 mt-6">
+                        <div class="w-10 h-10 bg-gray-200 rounded-lg"></div>
+                        <div class="w-10 h-10 bg-primary rounded-lg"></div>
+                        <div class="w-10 h-10 bg-gray-200 rounded-lg"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-    </main>
 
-    <!-- ====== Footer ====== -->
-    <footer>
-      <small>&copy; 2025 Lova.uz Barcha huquqlar himoyalangan.</small>
-    </footer>
+      <!-- Features Section -->
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold text-gray-900 mb-4">
+              Nima uchun 4000 Words?
+            </h3>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Zamonaviy texnologiyalar va ilmiy yondashuvlar asosida yaratilgan
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="text-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div class="text-4xl mb-4">🖼️</div>
+              <h4 class="text-xl font-semibold text-gray-900 mb-3">
+                Vizual o'rganish
+              </h4>
+              <p class="text-gray-600">
+                Har bir so'z uchun maxsus rasmlar va vizual yordamchilar
+              </p>
+            </div>
+            <div
+              class="text-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div class="text-4xl mb-4">🔊</div>
+              <h4 class="text-xl font-semibold text-gray-900 mb-3">
+                Audio talaffuz
+              </h4>
+              <p class="text-gray-600">
+                Professional audio yozuvlar bilan to'g'ri talaffuzni o'rganing
+              </p>
+            </div>
+            <div
+              class="text-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div class="text-4xl mb-4">📊</div>
+              <h4 class="text-xl font-semibold text-gray-900 mb-3">
+                Progressni kuzatish
+              </h4>
+              <p class="text-gray-600">
+                O'rganish jarayonini kuzatib boring va natijalarni tahlil qiling
+              </p>
+            </div>
+            <div
+              class="text-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div class="text-4xl mb-4">🎯</div>
+              <h4 class="text-xl font-semibold text-gray-900 mb-3">
+                Maqsadli o'rganish
+              </h4>
+              <p class="text-gray-600">
+                Darajangizga mos keladigan so'zlar va mashqlar
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  </div>
+      <!-- Footer -->
+      <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h4 class="text-xl font-bold mb-4">4000 Words 📚</h4>
+              <p class="text-gray-400">
+                Ingliz tilini o'rganishning eng samarali usuli
+              </p>
+            </div>
+            <div>
+              <h5 class="font-semibold mb-4">Havolalar</h5>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Loyiha haqida</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Aloqa</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Maxfiylik</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-semibold mb-4">Resurslar</h5>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Yordam</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >FAQ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="border-t border-gray-700 pt-8 text-center">
+            <p class="text-gray-400">
+              &copy; 2025 Lova.uz. Barcha huquqlar himoyalangan.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-  <!-- ====== Tiny JS (optional scroll-to-top fade later) ====== -->
-  <script>
-    // Agar keyinroq qo'shimcha interaktivlik kerak bo'lsa shu yerga yozishingiz mumkin
-  </script>
-</body>
+    <!-- Learning Platform -->
+    <div id="learning-page" class="min-h-screen hidden">
+      <!-- Learning Header -->
+      <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center py-3 sm:py-4">
+            <div class="text-left flex-1">
+              <h2
+                id="page-title"
+                class="text-lg sm:text-2xl font-bold text-gray-900"
+              >
+                So'zlar kolleksiyasi
+              </h2>
+              <p id="page-subtitle" class="text-xs sm:text-sm text-gray-600">
+                O'rganish uchun kolleksiyani tanlang
+              </p>
+            </div>
+            <button
+              id="back-button"
+              class="hidden flex items-center bg-primary hover:bg-primary-dark text-white px-3 py-2 sm:px-4 sm:py-2 rounded-lg transition-colors text-sm"
+            >
+              <svg
+                class="w-4 h-4 mr-1 sm:mr-2"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"
+                />
+              </svg>
+              Orqaga
+            </button>
+          </div>
+        </div>
+      </header>
 
+      <!-- Learning Content -->
+      <main class="py-4 sm:py-8 min-h-screen">
+        <div class="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
+          <!-- Loading State -->
+          <div
+            id="loading-state"
+            class="flex flex-col items-center justify-center py-20"
+          >
+            <div
+              class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mb-4"
+            ></div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              Yuklanmoqda...
+            </h3>
+            <p class="text-gray-600">
+              Ma'lumotlar tayyorlanmoqda, iltimos kuting
+            </p>
+          </div>
+
+          <!-- Error State -->
+          <div
+            id="error-state"
+            class="hidden flex flex-col items-center justify-center py-20"
+          >
+            <div class="text-6xl mb-6">⚠️</div>
+            <h3 class="text-xl font-semibold text-red-600 mb-2">
+              Xatolik yuz berdi
+            </h3>
+            <p id="error-message" class="text-gray-600 mb-6">
+              Ma'lumotlarni yuklashda muammo yuz berdi
+            </p>
+            <button
+              id="retry-btn"
+              class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg transition-colors"
+            >
+              Qayta urinish
+            </button>
+          </div>
+
+          <!-- Content Area -->
+          <div id="content-area" class="hidden">
+            <!-- Collections Selection (Mobile optimized) -->
+            <div
+              id="collections-grid"
+              class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto px-4"
+            >
+              <!-- Beginner Collection (Left) -->
+              <div
+                class="collection-card beginner bg-gradient-to-br from-pink-500 to-red-500 text-white p-8 rounded-3xl cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="text-center">
+                  <div class="text-6xl mb-6">🌟</div>
+                  <h3 class="text-3xl font-bold mb-4">Beginner Words</h3>
+                  <p class="text-lg opacity-90 mb-6">
+                    Boshlang'ich daraja uchun so'zlar
+                  </p>
+                  <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-4">
+                    <div class="text-2xl font-bold">1000+</div>
+                    <div class="text-sm opacity-80">So'zlar</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Essential Collection (Right) -->
+              <div
+                class="collection-card essential bg-gradient-to-br from-blue-600 to-purple-600 text-white p-8 rounded-3xl cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                <div class="text-center">
+                  <div class="text-6xl mb-6">📚</div>
+                  <h3 class="text-3xl font-bold mb-4">Essential Words</h3>
+                  <p class="text-lg opacity-90 mb-6">
+                    4000 ta asosiy ingliz so'zi
+                  </p>
+                  <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-4">
+                    <div class="text-2xl font-bold">4000</div>
+                    <div class="text-sm opacity-80">So'zlar</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Levels Grid -->
+            <div
+              id="levels-grid"
+              class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
+            >
+              <!-- Levels will be inserted here -->
+            </div>
+
+            <!-- Units Grid (3 columns as requested) -->
+            <div
+              id="units-grid"
+              class="hidden grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6"
+            >
+              <!-- Units will be inserted here -->
+            </div>
+
+            <!-- Words List -->
+            <div id="words-list" class="hidden space-y-4 sm:space-y-6">
+              <!-- Words will be inserted here -->
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
