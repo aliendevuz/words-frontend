@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>4000 Words | Essential English - Open in Google Play</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --bg-gradient-start: #f8fafc;
+            --bg-gradient-end: #e2e8f0;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border: #e2e8f0;
+            --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 10px 10px -5px rgb(0 0 0 / 0.04);
+            --radius: 20px;
+            --transition: all 0.2s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 420px;
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 28px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 24px;
+        }
+
+        .app-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0 0 0.5rem;
+            letter-spacing: -0.02em;
+            line-height: 1.3;
+        }
+
+        .app-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin: 0 0 1rem;
+            font-weight: 500;
+        }
+
+        .app-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            font-size: 0.8rem;
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .stat strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 1.25rem 2rem;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            border-radius: 16px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+            cursor: pointer;
+            touch-action: manipulation;
+            min-height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .footer {
+            margin-top: 1.5rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-text {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        /* Mobile First - Small phones (up to 375px) */
+        @media (max-width: 375px) {
+            .container {
+                padding: 0.75rem;
+                min-height: 100vh;
+            }
+            
+            .card {
+                padding: 1.75rem 1.25rem;
+                border-radius: 16px;
+                margin: 0;
+            }
+            
+            .app-icon {
+                width: 84px;
+                height: 84px;
+            }
+            
+            .app-title {
+                font-size: 1.375rem;
+                line-height: 1.25;
+            }
+            
+            .app-stats {
+                gap: 0.5rem;
+                font-size: 0.75rem;
+            }
+            
+            .btn {
+                padding: 1.125rem 1.5rem;
+                font-size: 1rem;
+                border-radius: 14px;
+                min-height: 52px;
+            }
+            
+            .footer-text {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Medium mobile (376px - 480px) */
+        @media (min-width: 376px) and (max-width: 480px) {
+            .container {
+                padding: 1rem 0.75rem;
+            }
+            
+            .card {
+                padding: 2rem 1.5rem;
+                border-radius: 18px;
+            }
+            
+            .app-icon {
+                width: 92px;
+                height: 92px;
+            }
+            
+            .app-stats {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Large mobile / Small tablet (481px - 768px) */
+        @media (min-width: 481px) and (max-width: 768px) {
+            .app-icon {
+                width: 96px;
+                height: 96px;
+            }
+            
+            .app-title {
+                font-size: 1.625rem;
+            }
+        }
+
+        /* Touch device optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .btn:active {
+                transform: scale(0.98);
+            }
+            
+            .btn:hover {
+                transform: none;
+            }
+        }
+
+        /* Landscape mobile */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .container {
+                padding: 0.5rem;
+                align-items: flex-start;
+                padding-top: 1rem;
+            }
+            
+            .card {
+                margin-top: 1rem;
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" role="main" aria-labelledby="app-title">
+            <div class="app-icon" aria-hidden="true">
+                <img src="https://play-lh.googleusercontent.com/Y4YMlQ2iTcTB2xXvZ--Cr094KRnPTPAEX0iAgxpOqk6LkZs5zB-1JzSLPP4UtZ6lrZA=w480-h960-rw" alt="" loading="lazy">
+            </div>
+            
+            <h1 class="app-title" id="app-title">4000 Words<br>Essential English</h1>
+            <p class="app-subtitle">by Alien Dev</p>
+
+            <div class="app-stats">
+                <div class="stat">⭐ <strong>4.9</strong></div>
+                <div class="stat"><strong>30</strong> ta sharh</div>
+                <div class="stat"><strong>1 ming+</strong></div>
+                <div class="stat">3+</div>
+            </div>
+
+            <button id="openNow" class="btn">Open Play Store</button>
+
+            <div class="footer">
+                <p class="footer-text">💡 "4000 Essential English Words" kitobi asosida</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=uz.alien.dictup';
+            const INTENT_URL = 'intent://details?id=uz.alien.dictup#Intent;scheme=market;package=com.android.vending;end';
+            
+            const openNowBtn = document.getElementById('openNow');
+            
+            // Detect Android and use intent URL
+            const isAndroid = /android/i.test(navigator.userAgent);
+            const targetUrl = isAndroid ? INTENT_URL : PLAY_STORE_URL;
+            
+            // Immediate redirect when button clicked
+            openNowBtn.addEventListener('click', function() {
+                window.location.href = targetUrl;
+            });
+            
+            // Keyboard support
+            openNowBtn.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    window.location.href = targetUrl;
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
